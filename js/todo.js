@@ -5,7 +5,6 @@ const toDoList = document.getElementById("todo-list");
 const TODOS_KEY = "todos";
 
 let toDos = [];
-
 function saveToDos() {
   localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
 }
@@ -42,6 +41,8 @@ function handleToDoSubmit(event) {
   paintToDo(newTodoObj);
   saveToDos();
 }
+
+if (localStorage.getItem("username") != null) toDoForm.style = "display";
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
 

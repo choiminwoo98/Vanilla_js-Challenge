@@ -1,0 +1,41 @@
+#wrapper {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+#todowrapper {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: column;
+}
+#todo-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style: none;
+  place-self: center;
+  gap: 10px;
+  max-width: 500px;
+  padding-right: 40px;
+}
+
+button {
+  color: red;
+  background-color: tomato;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+input {
+  width: 500px;
+  height: 32px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+  background-color: rgb(233, 233, 233);
+}

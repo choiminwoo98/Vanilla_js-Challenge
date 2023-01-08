@@ -1,7 +1,6 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const loginText = document.querySelector("#greeting");
-
 const USERNAME_KEY = "username";
 
 function onLoginsubmit(event) {
@@ -12,7 +11,7 @@ function onLoginsubmit(event) {
 loginForm.addEventListener("submit", onLoginsubmit);
 
 function paintGreeting(username) {
-  loginText.innerText = `${username}님 안녕하세요 `;
+  loginText.innerText = `${username}님의 ToDo-List `;
   loginForm.style = "display:none";
 }
 
